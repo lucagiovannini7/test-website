@@ -5,6 +5,7 @@ sitemap: false
 permalink: /allnews.html
 ---
 
+{% if site.data.news %}
 ## News
 
 <div class="jumbotron">
@@ -14,3 +15,6 @@ permalink: /allnews.html
 {{ article.headline }}
 {% endfor %}
 </div>
+{% else %}
+<meta http-equiv="refresh" content="0; {{ site.url }}{{ site.baseurl }}/404.html"></meta>
+{% endif %}

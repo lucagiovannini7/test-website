@@ -2,6 +2,14 @@ img {
     border-radius:5%;
 }
 
+a {
+  color: #79D9CC;
+}
+
+a:hover {
+  color: lighten(#79D9CC,20%);
+}
+
 .jumbotron {
     padding:20px; 
     padding-bottom:7px; 
